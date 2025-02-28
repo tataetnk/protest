@@ -1,0 +1,27 @@
+# ตั้งค่า Redirects (เปลี่ยนเส้นทาง URL)
+[[redirects]]
+  from = "/old-page"
+  to = "/new-page"
+  status = 301
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/news/:splat"
+  status = 301
+
+# ตั้งค่า Headers (เพิ่ม HTTP Security Headers)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Content-Security-Policy = "default-src 'self'"
+
+# ตั้งค่าโฟลเดอร์ที่ใช้ Functions
+[functions]
+  directory = "netlify/functions"
+
+# ตั้งค่า Build (ถ้ามีการใช้ Framework หรือ Static Site Generator)
+[build]
+  publish = "dist"    # เปลี่ยนเป็นโฟลเดอร์ที่ต้องการ Deploy
+  command = "npm run build"  # คำสั่ง build (เปลี่ยนตามโปรเจกต์)

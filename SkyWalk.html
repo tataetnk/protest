@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>Sky Walk</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* ระยะห่างระหว่างรูป */
+            margin-top: 20px;
+        }
+        
+        .image-container img {
+            width: 200px; /* ปรับขนาดรูปให้เล็กลง */
+            height: 130px; /* กำหนดความสูงเพื่อให้ขนาดสม่ำเสมอ */
+            object-fit: cover; /* ทำให้รูปไม่เสียสัดส่วน */
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+        }
+        .header img {
+            width: 120px;
+            margin-right: auto;
+        }
+        .nav {
+            display: flex;
+            gap: 15px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header h3 {
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .animal-info {
+            background: white;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .animal-info img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        .details {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .details p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .details strong {
+            color: #2E7D32;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Zoo Logo">
+        <nav class="nav">
+            <a href="index.html">หน้าแรก</a>
+            <a href="about.html">เกี่ยวกับเรา</a>
+            <a href="animals.html">สัตว์</a>
+           
+        </nav>
+    </header>
+    <header>
+    </header>
+    <main>
+        <section class="animal-info">
+            
+            <div class="details">
+                <h2>Sky Walk - สะพานเดินชมสัตว์ สวนสัตว์ขอนแก่น</h2>
+                <p>
+                    <strong>สะพานเดินชมสัตว์ (Sky Walk)</strong> เป็นอีกหนึ่งจุดเด่นของสวนสัตว์ขอนแก่น 
+                    ที่เปิดโอกาสให้นักท่องเที่ยวได้สัมผัสกับบรรยากาศธรรมชาติจากมุมสูง
+                </p>
+            
+                <h3>จุดเด่นของ Sky Walk</h3>
+                <ul>
+                    <li>มีความยาวประมาณ <strong>100 เมตร</strong></li>
+                    <li>สูงจากพื้นดินประมาณ <strong>15 เมตร</strong></li>
+                    <li>สามารถชมวิวทิวทัศน์ของพื้นที่โดยรอบ ได้แก่:
+                        <ul>
+                            <li>อำเภอเขาสวนกวาง</li>
+                            <li>อำเภอน้ำพอง</li>
+                            <li>เขื่อนอุบลรัตน์</li>
+                        </ul>
+                    </li>
+                </ul>
+            
+                <h3>สัตว์ที่สามารถพบเห็นได้จาก Sky Walk</h3>
+                <p>
+                    ด้านล่างของสะพานเดินชมสัตว์ นักท่องเที่ยวสามารถมองเห็นสัตว์ป่าอันน่าตื่นตาตื่นใจ เช่น
+                </p>
+                <ul>
+                    <li>ม้าลาย</li>
+                    <li>ยีราฟ</li>
+                    <li>นกกระจอกเทศ</li>
+                </ul>
+            
+                <p>
+                    นักท่องเที่ยวสามารถเดินเล่นบนสะพาน Sky Walk เพื่อสัมผัสประสบการณ์การชมสัตว์ในมุมมองที่แตกต่าง 
+                    และดื่มด่ำกับธรรมชาติอันสวยงามของสวนสัตว์ขอนแก่นได้อย่างเต็มที่
+                </p>
+            </div>
+            
+           
+                    <div class="image-container img">
+                        <img src="s.jpg" alt="h03">
+                        <img src="sky01.jpg" alt="sky01">
+                        <img src="sky02.jpg" alt="sky02">
+                    </div>
+                    
+            </div>
+        </section>
+    </main>
+</body>
+</html>

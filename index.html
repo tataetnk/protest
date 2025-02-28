@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>สวนสัตว์ขอนแก่น - ระบบดูแลและจัดแสดงออนไลน์</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/locales/th.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e8f5e9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: rgba(46, 125, 50, 0.7); /* ทำให้พื้นหลังโปร่งใส */
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px; /* ลดขนาด padding ให้แคบลง */
+            position: fixed; /* ทำให้แถบเมนูค้างที่ด้านบน */
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px;
+        }
+        
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .login {
+            background-color: #43a047;
+            padding: 5px 15px; /* ลดขนาด padding */
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+
+        .hero {
+            background-image: url('zoo.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-section, .services-section, .news-section, .animals-section {
+            padding: 50px 20px;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .about-section h2, 
+        .services-section h2, 
+        .news-section h2, 
+        .animals-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2e7d32;
+        }
+
+        .about-section p {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            text-align: center;
+        }
+
+        .news-grid, .animal-grid, .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .news-card, .animal-card, .service-card {
+            background-color: #f4f4f9;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .news-card img, .animal-card img, .service-card img {
+            width: 200px; /* ขนาดกว้าง */
+            height: 200px; /* ขนาดสูง */
+            object-fit: cover;
+            border-radius: 50%;  /* ทำให้รูปเป็นวงกลม */
+            margin-top: 20px; /* ทำให้รูปอยู่ด้านบน */
+        }
+
+        .news-card h3, .animal-card h3, .service-card h3 {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .card-description {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #2e7d32;
+        }
+
+        .card-description a {
+            color: #43a047;
+            text-decoration: none;
+        }
+
+        .card-description a:hover {
+            text-decoration: underline;
+        }
+
+        .btn-see-all {
+            display: block;
+            background-color: #43a047;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 20px auto;
+            width: 200px; /* กำหนดความกว้างของปุ่ม */
+            text-align: center; /* ทำให้ข้อความในปุ่มอยู่ตรงกลาง */
+        }
+        
+        .animals-section {
+            padding: 50px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .animals-section h2 {
+            color: #2e7d32;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #2e7d32;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <img src="logo.png" alt="Zoo Logo">
+    <nav class="nav">
+        <a href="index.html">หน้าแรก</a>
+        <a href="about.html">เกี่ยวกับเรา</a>
+        <a href="animals.html">สัตว์</a>
+    </nav>
+    <a href="login.php" class="login">เข้าสู่ระบบ</a>
+</header>
+
+<section class="hero">
+</section>
+
+<section class="animals-section">
+    <h2>สถานที่แนะนำ</h2>
+    <div class="animal-grid">
+        <div class="animal-card">
+            <img src="s.jpg" alt="Animal 1">
+            <p class="card-description"><a href="SkyWalk.html">Sky Walk</a></p>
+        </div>
+        <div class="animal-card">
+            <img src="m.jpg" alt="Animal 2">
+            <p class="card-description"><a href="deer.html">ทุ่งแสนกวาง</a></p>
+            
+        </div>
+        <div class="animal-card">
+            <img src="n.jpg" alt="Animal 3">
+            <p class="card-description"><a href="waterpark.html">สวนน้ำของสวนสัตว์ขอนแก่น</a></p>
+        </div>
+    </div>
+</section>
+
+<section class="animals-section">
+    <section class="animals-section">
+        <h2>กิจกรรรมทั้งหมด</h2>
+        <div class="animal-grid" id="animalGrid">
+            <div class=" ">
+                <img src="e01.jpg" alt="e01">
+        
+            </div>
+           
+        </div>
+        <section class="animals-section">
+            <section class="animals-section">
+                <h2>แผนที่</h2>
+                <div class="animal-grid" id="animalGrid">
+                    <div class=" ">
+                        <img src="map.jpg" alt="map">
+                
+                    </div>
+                   
+
+</body>
+</html>

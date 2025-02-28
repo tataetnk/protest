@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>ข้อมูลสัตว์</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #2E7D32;
+            color: white;
+        }
+        .header img {
+            width: 100px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+        .nav a:hover {
+            color: #FFD700;
+        }
+        .title {
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            color: #2E7D32;
+        }
+        .animal-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background: white;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .animal-info img {
+            width: 40%;
+            max-width: 300px;
+            border-radius: 12px;
+            margin-right: 20px;
+        }
+        .details {
+            text-align: left;
+            flex: 1;
+        }
+        .details p {
+            font-size: 18px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .details strong {
+            color: #2E7D32;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Zoo Logo">
+        <nav class="nav">
+            <a href="index.html">หน้าแรก</a>
+            <a href="about.html">เกี่ยวกับเรา</a>
+            <a href="animals.html">สัตว์</a>
+        </nav>
+    </header>
+    <h3 class="title">ข้อมูลสัตว์</h3>
+    <main>
+        <section class="animal-info">
+            <img src="tiger.jpg" alt="เสือโคร่งไซบีเรีย">
+            <div class="details">
+                <h2>เสือโคร่งไซบีเรีย (Siberian Tiger)</h2>
+                <p><strong>ชื่อวิทยาศาสตร์:</strong> Panthera tigris altaica</p>
+                <p><strong>ลักษณะที่น่าสนใจ:</strong> มีขนสีส้มเหลืองลายดำ หนากว่าพันธุ์อื่นเพื่อป้องกันความหนาว</p>
+                <p><strong>ที่อยู่อาศัย:</strong> พบในป่าภูเขาของรัสเซียตะวันออกไกล</p>
+                <p><strong>อาหาร:</strong> หมูป่า, กวาง, และสัตว์ขนาดเล็ก</p>
+                <p><strong>สถานภาพปัจจุบัน:</strong> ใกล้สูญพันธุ์ (Endangered)</p>
+                <p><strong>วัยเจริญพันธุ์:</strong> ระยะเวลาการตั้งท้อง 3 - 3 เดือนครึ่ง ปกติออกลูก 2 - 4 ตัว</p>
+                <p><strong>ขนาดและน้ำหนัก:</strong> ตัวผู้ที่ใหญ่ที่สุดอาจมีความยาวลำตัวได้ถึง 3.7 เมตร (รวมหาง 1 เมตร) และมีน้ำหนักมากถึง 423 กิโลกรัม</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+

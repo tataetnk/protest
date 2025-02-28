@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>ข้อมูลสัตว์</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #2E7D32;
+            color: white;
+        }
+        .header img {
+            width: 100px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+        .nav a:hover {
+            color: #FFD700;
+        }
+        .title {
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            color: #2E7D32;
+        }
+        .animal-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background: white;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .animal-info img {
+            width: 40%;
+            max-width: 300px;
+            border-radius: 12px;
+            margin-right: 20px;
+        }
+        .details {
+            text-align: left;
+            flex: 1;
+        }
+        .details p {
+            font-size: 18px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .details strong {
+            color: #2E7D32;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Zoo Logo">
+        <nav class="nav">
+            <a href="index.html">หน้าแรก</a>
+            <a href="about.html">เกี่ยวกับเรา</a>
+            <a href="animals.html">สัตว์</a>
+        </nav>
+    </header>
+    <h3 class="title">ข้อมูลสัตว์</h3>
+    <main>
+        <section class="animal-info">
+            <img src="lion.jpg" alt="สิงโต">
+            <div class="details">
+                <h2>สิงโต/Lion (Panthera leo)</h2>
+                <p><strong>ชื่อวิทยาศาสตร์:</strong> Panthera leo</p>
+                <p><strong>ลักษณะที่น่าสนใจ:</strong> สิงโตแอฟริกา และสิงโตอินเดียไม่มีลักษณะที่แตกต่างกัน สิงโตไม่มีลายบนตัวอย่างเสือ ตัวผู้ที่โตเต็มที่จะมีขนยาวขึ้นรอบคอ ดูสง่าน่าเกรงขาม ตัวเมียไม่มีขนรอบคอ ตรงปลายหางมีขนขึ้นเป็นพู่</p>
+                <p><strong>ที่อยู่อาศัย:</strong> พบในทวีปแอฟริกา ในทวีปเอเชียยังคงพบได้บ้างเช่นในประเทศอินเดียทางแถบตะวันตก</p>
+                <p><strong>อาหาร:</strong> สิงโตกินเนื้อสัตว์เป็นอาหาร กินสัตว์ได้แทบทุกชนิด เช่น ควายป่า ยีราฟ ม้าลาย กวางป่า กวางดาว เป็นต้น แม้แต่ซากสิงโตด้วยกันเองก็กิน</p>
+                <p><strong>อายุเฉลี่ย:</strong> 16 - 19 ปี</p>
+                <p><strong>วัยเจริญพันธุ์:</strong> สิงโตมีฤดูผสมพันธุ์ไม่แน่นอนสามารถมีได้ทุกเวลาตลอดปี ตัวเมียเริ่มผสมพันธุ์ได้เมื่อมีอายุประมาณ 3 ปี ส่วนตัวผู้ประมาณ 4-6 ปี ระยะของการเป็นสัดนาน 4-16 วัน ตั้งท้องนานราว 100 วัน ออกลูกครั้งละ 3-5 ตัว ลูกอดนมเมื่ออายุ 3-6 เดือน และมีอายุยืนประมาณ 30-40 ปี</p>
+                <p><strong>ขนาดและน้ำหนัก:</strong> เพศเมียหนัก 110 - 168 กิโลกรัม ส่วนเพศผู้หนัก 150 - 272 กิโลกรัม</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

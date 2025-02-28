@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>ข้อมูลสัตว์</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #2E7D32;
+            color: white;
+        }
+        .header img {
+            width: 100px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+        .nav a:hover {
+            color: #FFD700;
+        }
+        .title {
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            color: #2E7D32;
+        }
+        .animal-info {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background: white;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .animal-info img {
+            width: 40%;
+            max-width: 300px;
+            border-radius: 12px;
+            margin-right: 20px;
+        }
+        .details {
+            text-align: left;
+            flex: 1;
+        }
+        .details p {
+            font-size: 18px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .details strong {
+            color: #2E7D32;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Zoo Logo">
+        <nav class="nav">
+            <a href="index.html">หน้าแรก</a>
+            <a href="about.html">เกี่ยวกับเรา</a>
+            <a href="animals.html">สัตว์</a>
+        </nav>
+    </header>
+    <h3 class="title">ข้อมูลสัตว์</h3>
+    <main>
+        <section class="animal-info">
+            <img src="giraffe.jpg" alt="ยีราฟ">
+            <div class="details">
+                <h2>ยีราฟ/Giraffe (Giraffa camelopardalis)</h2>
+                <p><strong>ชื่อวิทยาศาสตร์:</strong> Giraffa camelopardalis</p>
+                <p><strong>ลักษณะที่น่าสนใจ:</strong> เป็นสัตว์บกที่สูงที่สุด มีคอยาวมาก มีเขาทั้งในตัวผู้และตัวเมีย ไม่ผลัดเขา เขามีขนปกคลุมอยู่ หนังมีขนสั้นสีน้ำตาล มีลายขาวแปลกตา ปากและลิ้นยาว ใช้ริมฝีปาก และลิ้นม้วนวนจับใบไม้ได้ มีเต้านม 4 เต้า</p>
+                <p><strong>ที่อยู่อาศัย:</strong> พบเฉพาะในทวีปแอฟริกา แถบทุ่งหญ้าสะวันนา ทางตอนใต้ของทะเลทรายซาฮาร่า ตั้งแต่ไนจีเรียไปจนจรดแม่น้ำออเรนจ์</p>
+                <p><strong>อาหาร:</strong> ยีราฟจะเล็มใบไม้จากกิ่งไม้ในระดับสูงของต้นไม้ โดยเฉพาะใบไม้ตระกูลอาแคเซีย ซึ่งใบไม้จะมีแคลเซียมและโปรตีนที่เหมาะกับการอัตราการเจริญเติบโตของยีราฟ โดยในหนึ่งวันยีราฟกินใบไม้เฉลี่ย 34 กิโลกรัม ซึ่งเป็นปริมาณที่น้อยเมื่อเทียบกับน้ำหนักตัว</p>
+                <p><strong>อายุเฉลี่ย:</strong> อายุขัยประมาณ 25 ปี ส่วนในป่าอยู่ในช่วง 10 - 15 ปี</p>
+                <p><strong>วัยเจริญพันธุ์:</strong> ยีราฟเริ่มผสมพันธุ์ได้เมื่อมีอายุราว 3 ปีครึ่ง ตั้งท้องนาน 420 - 468 วัน ออกลูกครั้งละ 1 ตัว ลูกหย่านมเมื่ออายุ 10 เดือน เป็นสัดทุก 14 วัน แต่ละครั้งเป็นอยู่นาน 24 ชั่วโมง</p>
+                <p><strong>ขนาดและน้ำหนัก:</strong> ความสูงของยีราฟในช่วงอายุโตเต็มวัยจากพื้นถึงปลายเขา 4.3 - 5.7 เมตร โดยเพศผู้จะสูงกว่าเพศเมีย น้ำหนักเฉลี่ยของเพศผู้ 1192 กิโลกรัม ส่วนเพศเมียน้ำหนักเฉลี่ย 828 กิโลกรัม</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>สวนน้ำ</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* ระยะห่างระหว่างรูป */
+            margin-top: 20px;
+        }
+        
+        .image-container img {
+            width: 200px; /* ปรับขนาดรูปให้เล็กลง */
+            height: 130px; /* กำหนดความสูงเพื่อให้ขนาดสม่ำเสมอ */
+            object-fit: cover; /* ทำให้รูปไม่เสียสัดส่วน */
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+        }
+        .header img {
+            width: 120px;
+            margin-right: auto;
+        }
+        .nav {
+            display: flex;
+            gap: 15px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header h3 {
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .animal-info {
+            background: white;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .animal-info img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        .details {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .details p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .details strong {
+            color: #2E7D32;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Zoo Logo">
+        <nav class="nav">
+            <a href="index.html">หน้าแรก</a>
+            <a href="abuot.html">เกี่ยวกับเรา</a>
+            <a href="animals.html">สัตว์</a>
+           
+        </nav>
+    </header>
+    <header>
+    </header>
+    <main>
+        <section class="animal-info">
+            
+            <div class="details">
+                <h2>สวนน้ำของสวนสัตว์ขอนแก่น</h2>
+                <p>
+                    สวนน้ำทะเลบนภูเขาหรือสวนน้ำ สวนสัตว์ขอนแก่น สถานที่ท่องเที่ยวพักผ่อนหย่อนใจ 
+                    สัมผัสบรรยากาศแบบธรรมชาติท่ามกลางขุนเขา เพลิดเพลินกับสระน้ำวน 
+                    สนุกกับสไลด์เดอร์สูงถึง 15 เมตร มีให้เลือกเล่นทั้งรางตรงและรางแบบคดเคี้ยว
+                </p>
+            
+                <p>
+                    สวนน้ำของสวนสัตว์ขอนแก่น ให้บริการทุกวัน ตั้งแต่เวลา <strong>10.00 น. ถึง 18.00 น.</strong>
+                </p>
+            
+                <h3>จุดบริการต่างๆ</h3>
+                <p>
+                    สำหรับจุดบริการต่างๆ ไม่ว่าจะเป็นการเช่าชุดว่ายน้ำ หมวก แว่นตา ผ้าเช็ดตัว ชุดคลุม 
+                    ห่วงยาง รองเท้า ล็อกเกอร์ รวมไปถึงศูนย์อาหารจะใช้คูปองเงินสดแทนเงินสด
+                </p>
+            
+                <h3>อัตราค่าเช่าชุด</h3>
+                <ul>
+                    <li>เด็กเล็ก ชาย – หญิง ราคา <strong>30</strong> บาท + ค่าหมวกว่ายน้ำ <strong>10</strong> บาท</li>
+                    <li>เด็กกลาง ชาย – หญิง ราคา <strong>50</strong> บาท + ค่าหมวกว่ายน้ำ <strong>10</strong> บาท</li>
+                    <li>ผู้ใหญ่ ชาย – หญิง ราคา <strong>80</strong> บาท + ค่าหมวกว่ายน้ำ <strong>10</strong> บาท</li>
+                </ul>
+            
+                <p>
+                    ใช้ <strong>บัตรประจำตัวประชาชน, ใบขับขี่, บัตรนักศึกษา</strong> หรือบัตรทางราชการออกให้ 
+                    ในการมัดจำสำหรับการเช่าชุดและอุปกรณ์ต่างๆ ในการลงเล่นน้ำ
+                </p>
+            
+                <h3>จุดบริการแลกคูปอง</h3>
+                <ul>
+                    <li><strong>จุดที่ 1</strong> อยู่บริเวณทางขึ้นอาคารบริการชั้น 2</li>
+                    <li><strong>จุดที่ 2</strong> อยู่บริเวณชั้นล่างของอาคารบริการ</li>
+                    <li><strong>จุดที่ 3</strong> อยู่บริเวณศูนย์อาหาร</li>
+                </ul>
+            
+                <h3>ศูนย์อาหาร</h3>
+                <p>
+                    ศูนย์อาหารอยู่บริเวณชั้นล่างของลานสีน้ำเงิน มีอาหารหลากหลายให้เลือก เช่น ข้าวมันไก่, 
+                    ข้าวขาหมู, ข้าวหมูแดงหมูกรอบ, ก๋วยเตี๋ยว, ไก่ย่างส้มตำ, ผลไม้, ของหวาน 
+                    รวมไปถึงเครื่องดื่มเย็นๆ นักท่องเที่ยวสามารถใช้บริการศูนย์อาหารได้
+                </p>
+                <p>
+                    มีจุดบริการแลกคูปองเงินสดอีก <strong>1 จุด</strong> อยู่บริเวณชั้นล่างของลานสีน้ำเงิน ศูนย์อาหารสวนน้ำสวนสัตว์ขอนแก่น
+                </p>
+            </div>
+            
+           
+                    <div class="image-container img">
+                        <img src="n02.jpg" alt="h03">
+                        <img src="w01.jpg" alt="sky01">
+                        <img src="w02.jpg" alt="sky02">
+                    </div>
+                    
+            </div>
+        </section>
+    </main>
+</body>
+</html>
